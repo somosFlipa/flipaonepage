@@ -815,7 +815,7 @@ nav .ulnav li a{
 /* TRAMO 5 */
 
 #info-form{
-    margin-top: 200px;
+    margin-top: 50px;
     width: 100%;
     height: 600px;
     background-color: #833471;
@@ -1142,8 +1142,7 @@ nav .ulnav li a{
 #flexacord .preg ul li{
     list-style-type: none;
     text-decoration: none;
-    margin-bottom: 30px;
-
+    margin-bottom: 15px;
 }
 
 #flexacord .preg h3{
@@ -1241,7 +1240,7 @@ nav .ulnav li a{
     margin: auto;
     max-width: 1200px;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap:25px;
     padding: 45px 0px;
 }
@@ -1254,6 +1253,7 @@ nav .ulnav li a{
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 155px;
+    margin-left: 80px;
 }
 
 .pie-pagina .grupo-1 .box span{
@@ -1275,12 +1275,19 @@ nav .ulnav li a{
     font-size: 20px;
     text-decoration: none;
     list-style-type: none;
+    margin-top: 10px;
+
 }
 
 .pie-pagina .grupo-1 .box h2{
     font-size: 20px;
     color: #CC095D;
+    text-align: center;
 
+}
+
+.pie-pagina .grupo-1 .red-social{
+    text-align: center;
 }
 
 .pie-pagina .grupo-1 .red-social a{
@@ -1311,5 +1318,10 @@ nav .ulnav li a{
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box figure img{
+        width: 155px;
+        margin-left: 0px;
     }
 }
