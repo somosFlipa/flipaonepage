@@ -338,11 +338,11 @@ nav .ulnav li a{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     transition: all 400ms ease-out;
     cursor: pointer;
-    transform: translateX(-20px);
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    -o-transform: translateX(-20px);
+    transform: translatey(20px);
+    -webkit-transform: translatey(20px);
+    -moz-transform: translatey(20px);
+    -ms-transform: translatey(20px);
+    -o-transform: translatey(20px);
 }
 
 .ttp{
@@ -389,11 +389,11 @@ nav .ulnav li a{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     transition: all 400ms ease-out;
     cursor: pointer;
-    transform: translateX(-20px);
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    -o-transform: translateX(-20px);
+    transform: translatey(20px);
+    -webkit-transform: translatey(20px);
+    -moz-transform: translatey(20px);
+    -ms-transform: translatey(20px);
+    -o-transform: translatey(20px);
 }
 
 .card2 .ttp{
@@ -441,8 +441,12 @@ nav .ulnav li a{
         margin: 30px;
         overflow: hidden;
         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        transition: all 400ms ease-out;
         cursor: pointer;
+        transition: all 400ms ease-out;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
     }
     
     .ttp{
@@ -485,8 +489,12 @@ nav .ulnav li a{
         margin: 30px;
         overflow: hidden;
         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        transition: all 400ms ease-out;
         cursor: pointer;
+        transition: all 400ms ease-out;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
     }
     
     .card2 .ttp{
@@ -554,6 +562,14 @@ nav .ulnav li a{
     width: 150px;
     margin-right: 50px;
     cursor: pointer;
+}
+
+@media all and (max-width: 1400px){
+    .partner{
+        position: absolute;
+        left: 250px;
+        top: 995px;
+    }
 }
 
 @media all and (max-width: 1300px){
@@ -836,12 +852,12 @@ nav .ulnav li a{
     height: 40px;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10px;
     position: relative;
     top: 150px;
     text-transform: uppercase;
     border-style: none;
     cursor: pointer;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -902,24 +918,26 @@ nav .ulnav li a{
 .form input{
     width: 500px;
     height: 40px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     margin-bottom: 20px;
+    border-style: none;
 }
 
 .form textarea{
     width: 500px;
     height: 200px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     margin-bottom: 20px;
-
+    resize: none;
+    border-style: none;
 }
 
 .form button{
@@ -992,6 +1010,7 @@ nav .ulnav li a{
 /* BANNER */
  
 .bannerc{
+    background-image: url(../img/banner.png);
     background-color: #CC095D;
     width: 100%;
     height: 150px;
@@ -1035,7 +1054,11 @@ nav .ulnav li a{
     border-color: #fff;
 }
 
-
+@media all and (max-width: 1300px){
+    .bannerc h3{
+        margin-right: 380px;
+    }
+}
 
 @media all and (max-width: 930px){
 
@@ -1112,60 +1135,35 @@ nav .ulnav li a{
     padding: 50px;
 }
 
-.accordion {
-    width: 900px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    background: #8d0394a8;
+#flexacord .preg{
+    width: 500px;
 }
-  
-.accordion__label, .accordion__content {
-    padding: 40px 20px;
+
+#flexacord .preg ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 30px;
+
 }
-  
-.accordion__label{
-    display: block;
-    color: #ffffff;
-    font-weight: 500;
-    cursor: pointer;
+
+#flexacord .preg h3{
+    font-size: 24px;
+    margin-bottom: 10px;
     position: relative;
-    transition: background 0.1s;
+    top: 30px;
 }
-  
-.accordion__label:hover {
-    background: rgba(0, 0, 0, 0.1);
+
+#flexacord .preg img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 50px;
 }
-  
-.accordion__label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    width: 12px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-    background-size: contain;
-    transition: transform 0.4s;
-}
-  
-.accordion__content {
-    background: #ffffff;
-    line-height: 1.6;
-    display: none;
-}
-  
-.accordion__input {
-    display: none;
-}
-  
-.accordion__input:checked ~ .accordion__content {
-    display: block;
-}
-  
-.accordion__input:checked ~ .accordion__label::after {
-    transform: translateY(-50%) rotate(0.5turn);
+
+#flexacord .preg p{
+    width: 500px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 @media all and (max-width: 930px){
@@ -1200,66 +1198,36 @@ nav .ulnav li a{
         padding: 1px;
     }
     
-    .acordp{
-        display: none;
-        font-size: 32px;
-        text-align: center;
+    #flexacord .preg{
+        width: 500px;
+        padding-left: 50px;
     }
     
-    .accordion {
-        width: 900px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        overflow: hidden;
-        background: #8d0394a8;
+    #flexacord .preg ul li{
+        list-style-type: none;
+        text-decoration: none;
+        margin-bottom: 20px;
+        padding: 20px;
     }
-      
-    .accordion__label, .accordion__content {
-        padding: 40px 20px;
+    
+    #flexacord .preg h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+    
     }
-      
-    .accordion__label{
-        display: block;
-        color: #ffffff;
-        font-weight: 500;
-        cursor: pointer;
+    
+    #flexacord .preg ul li .iconopreg{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
         position: relative;
-        transition: background 0.1s;
+        right: 50px;
     }
-      
-    .accordion__label:hover {
-        background: rgba(0, 0, 0, 0.1);
-    }
-      
-    .accordion__label::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 20px;
-        width: 12px;
-        height: 6px;
-        background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-        background-size: contain;
-        transition: transform 0.4s;
-    }
-      
-    .accordion__content {
-        background: #ffffff;
-        line-height: 1.6;
-        display: none;
-    }
-      
-    .accordion__input {
-        display: none;
-    }
-      
-    .accordion__input:checked ~ .accordion__content {
-        display: block;
-    }
-      
-    .accordion__input:checked ~ .accordion__label::after {
-        transform: translateY(-50%) rotate(0.5turn);
+    
+    #flexacord .preg p{
+        width: 300px;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
 }
 
